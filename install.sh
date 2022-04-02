@@ -12,6 +12,13 @@ cd /tmp && sudo git clone https://aur.archlinux.org/nimdow-bin.git
 cd nimdow-bin || exit && echo "Nimdow installation failed"
 makepkg -si
 echo "Successfully installed nimdow and synced dotfiles!"
+cd ~/Downloads
+git clone https://github.com/Infinitybeond1/slstatus
+cd slstatus
+sudo make clean install
+echo "Successfully installed slstatus!"
+
+# Finished
 echo "Killing current desktop enviroment in 30 seconds. Press ctrl+c to cancel"
 sleep 30s
 sudo killall Xorg || exec nimdow

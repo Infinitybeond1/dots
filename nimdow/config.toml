@@ -20,29 +20,39 @@ keys = [ "b" ]
 modifiers = [ "super", "shift" ]
 
 [[startProcess]]
-command = "sh ~/.config/bspwm/rofi/bin/screenshot"
+command = "screenshot"
 keys = [ "s" ]  
 modifiers = [ "super" ]
 
 
 [[startProcess]]
-command = "sh ~/.config/bspwm/rofi/bin/launcher"
+command = "launcher"
 keys = [ "d" ]
 modifiers = [ "super" ]
 
 [[startProcess]]
-command = "nmd"
+command = "network"
 keys = [ "n" ]
 modifiers = [ "super" ]
 
 [[startProcess]]
 command = "color-gpick"
-keys = [ "p" ]
+keys = [ "c" ]
 modifiers = [ "super" ]
 
 [[startProcess]]
 command = "xfce4-terminal"
 keys = [ "Return" ]
+modifiers = [ "super" ]
+
+[[startProcess]]
+command = "windows"
+keys = [ "w" ]
+modifiers = [ "super" ]
+
+[[startProcess]]
+command = "mpd"
+keys = [ "p" ]
 modifiers = [ "super" ]
 
 # Example: Start process when region is clicked, see github wiki for what constitutes a region
@@ -57,6 +67,8 @@ exec = [
   #"st",
   "nitrogen --restore",
   "picom --blur-background"
+  "wmname LG3D"
+  "slstatus"
 ]
 
 [settings]
@@ -74,7 +86,9 @@ exec = [
   barUrgentColor = "#BF616A"
   barFonts = [
     "monospace:size=10:antialias=true",
-    "NotoColorEmoji:size=10:antialias=true"
+    "NotoEmoji-Regular:size=10:antialias=true"
+    # trunk-ignore(taplo/error)
+    "OpenMoji-Color:size=10:antialias=true"
   ]
 	# Layout settings
   gapSize = 12
@@ -113,13 +127,13 @@ exec = [
   keys = [ "q" ]
   modifiers = [ "super" ]
 
-  [controls.goToPreviousTag]
-  keys = [ "w" ]
-  modifiers = [ "super" ]
+  #[controls.goToPreviousTag]
+  #keys = [ "w" ]
+  #modifiers = [ "super" ]
 
-  [controls.moveWindowToPreviousTag]
-  keys = [ "w" ]
-  modifiers = [ "super", "shift" ]
+  #[controls.moveWindowToPreviousTag]
+  #keys = [ "w" ]
+  #modifiers = [ "super", "shift" ]
 
   [controls.focusPreviousMonitor]
   keys = [ "comma" ]
@@ -218,4 +232,3 @@ exec = [
 
   # [monitors.2.tags]
   # 2.displayString = "too"
-
