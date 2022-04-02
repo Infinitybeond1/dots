@@ -17,6 +17,11 @@ git clone https://github.com/Infinitybeond1/slstatus
 cd slstatus
 sudo make clean install
 echo "Successfully installed slstatus!"
+cd ~/Downloads
+git clone https://github.com/arcticicestudio/nord-xfce-terminal
+cd nord-xfce-terminal
+./install.sh
+echo "Successfully installed terminal theming!"
 
 # Finished
 echo "Killing current desktop enviroment in 30 seconds. Press ctrl+c to cancel"
